@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>新雨天气</title>
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/onepage-scroll.css">
+<link rel="stylesheet" href="https://v3.chainwon.com/theme/default/src/css/waves.min.css?v=2">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="shortcut icon" href="./favicon.ico">
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+<script src="./js/jquery.onepage-scroll.min.js"></script>
+<script>
+$(function(){
+	$('.main').onepage_scroll({
+		sectionContainer: '.page',
+		easing: "ease-in",
+		updateURL: false,
+	});
+});
+</script>
+</head>
+<body>
+<div class="main">
+	<div class="page page1">
+		<div class="cloud-s"></div><div class="cloud-f"></div>
+		<div class="mainly m-3"></div>
+		<div class="mainly m-2"></div>
+	  <div class="mainly m"></div>
+		<div class="mainly m-4"></div>
+		<div class="mainly m-5"></div>
+		<div class="next fa fa-angle-down flat-icon waves-effect waves-circle"></div>
+	</div>
+	<div class="page page2">
+		<div class="round-1">
+			<div class="weather">晴</div>
+			<div class="info">
+				<div class="temperature">21°</div><div class="air"><p>湿度 45%</p><p>轻度污染 45</p></div>
+				<div class="warn">大风预警</div>
+			</div>
+		</div>
+		<div class="round-2"></div>
+		<div class="round-3"></div>
+		<div class="round-4"></div>
+		<div class="round-5"></div>
+		<div class="next fa fa-angle-down flat-icon waves-effect waves-circle"></div>
+	</div>
+	<div class="page page3">
+		<div class="preview">
+			<img src="img/daytime.jpg">
+			<img src="img/rain.jpg">
+			<img src="img/morning.jpg">
+			<img src="img/snow.jpg">
+			<img src="img/noon.jpg">
+			<img src="img/night.jpg">
+		</div>
+		<div class="next fa fa-angle-down flat-icon waves-effect waves-circle"></div>
+	</div>
+	<div class="page page4">
+		<div class="dinfo">
+			<img src="https://ws2.sinaimg.cn/large/006pSa7Qgy1fc43mm78vmj30e80e8jr8" class="logo">
+	  	<img src="./img/two.png" class="two">
+	  	<a href="http://dl.coolapkmarket.com/down/apk_upload/2016/1130/app-release-for-15571-o_1b2og104g1adoo5g73718mm3f4v-uid-458526.apk?_upt=90eaf8281484752576" class="download flat-icon waves-effect waves-circle">立即下载</a>
+    </div>
+		<div class="copyright">&copy; 2017 新雨天气</div>
+	</div>
+</div>
+<foot>
+<script>
+$(".next").click(function() {
+    $(".main").moveDown();
+});
+</script>
+<script src="https://v3.chainwon.com/theme/default/src/js/waves.min.js"></script>
+<script>Waves.init();</script>
+<foot>
+</body>
+</html>
